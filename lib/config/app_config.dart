@@ -1,17 +1,22 @@
 /// Configuración global de la app.
 ///
-/// La URL de la API se define en tiempo de compilación:
-///   flutter run --dart-define=API_BASE_URL=http://192.168.1.20:8002
-///   flutter build apk --release --dart-define=API_BASE_URL=https://api.midominio.pe
-/// Por defecto apunta al backend local visto desde el emulador de Android.
+/// Por defecto la app consume el backend desplegado en Render.
+/// Para trabajar con el backend local, indica la URL al ejecutar:
+///   flutter run --dart-define=API_BASE_URL=http://10.0.2.2:8002        (emulador Android)
+///   flutter run --dart-define=API_BASE_URL=http://192.168.1.20:8002    (teléfono en la misma red)
 class AppConfig {
   AppConfig._();
 
   static const String appName = 'AgroSMART Perú';
-  static const String apiBaseUrl = String.fromEnvironment('API_BASE_URL', defaultValue: 'http://10.0.2.2:8002');
+  static const String apiBaseUrl = String.fromEnvironment(
+    'API_BASE_URL',
+    defaultValue: 'https://agrosmart-api.onrender.com',
+  );
 
-  static const Duration connectTimeout = Duration(seconds: 15);
-  static const Duration receiveTimeout = Duration(seconds: 20);
+  // El plan gratuito de Render suspende el servicio cuando no se usa y tarda
+  // alrededor de un minuto en despertar; estos tiempos cubren ese arranque.
+  static const Duration connectTimeout = Duration(seconds: 30);
+  static const Duration receiveTimeout = Duration(seconds: 70);
 
   static const int passwordMinLength = 8;
   static const double minAltitude = 0;
