@@ -10,7 +10,7 @@ class AppConfig {
   static const String appName = 'AgroSMART Perú';
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'https://agrosmart-api.onrender.com',
+    defaultValue: 'https://agrosmart-api-3dxe.onrender.com',
   );
 
   // El plan gratuito de Render suspende el servicio cuando no se usa y tarda
