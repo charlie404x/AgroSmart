@@ -1,0 +1,24 @@
+# Análisis estático de AgroSMART Perú.
+# Base: reglas recomendadas de Flutter (package:flutter_lints) + reglas adicionales.
+include: package:flutter_lints/flutter.yaml
+
+formatter:
+  page_width: 110
+
+analyzer:
+  language:
+    strict-casts: true
+  errors:
+    unawaited_futures: warning
+
+linter:
+  rules:
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_locals
+    - prefer_final_fields
+    - unawaited_futures
+    - avoid_redundant_argument_values
+    - directives_ordering
+    - sort_child_properties_last
+    - use_build_context_synchronously

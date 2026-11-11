@@ -1,0 +1,29 @@
+{
+ "department": "Cusco",
+ "classification": "Templado frio de valle y puna (Koppen: Cwb / Dwb / ET en puna alta)",
+ "temperature_range": "9–16 °C",
+ "precipitation": "600–900 mm/año",
+ "humidity": "55–65 %",
+ "description": "Gran variacion altitudinal: valles templados hasta punas frias; lluvias concentradas en verano austral (dic-mar).",
+ "typical_altitude_min": 2000,
+ "typical_altitude_max": 4200,
+ "common_soils": [
+  "Andosol",
+  "Cambisol",
+  "Leptosol",
+  "Regosol"
+ ],
+ "common_crops": [
+  "Papa",
+  "Maíz amiláceo",
+  "Quinua",
+  "Cebada grano",
+  "Haba grano seco",
+  "Olluco",
+  "Oca",
+  "Mashua"
+ ],
+ "data_type": "referencial",
+ "source": "SENAMHI - Atlas Climatico del Peru (clasificacion aproximada, promedios referenciales; no son datos en tiempo real)",
+ "disclaimer": "Promedios climáticos referenciales del departamento. No son mediciones ni pronósticos en tiempo real; las condiciones de tu parcela pueden variar según la altitud y la época del año."
+}

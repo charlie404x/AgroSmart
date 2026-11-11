@@ -1,0 +1,14 @@
+{
+ "id": 3,
+ "created_at": "2026-11-11T15:20:46.944524Z",
+ "department": "Puno",
+ "altitude": 4900.0,
+ "altitude_band": "Alta",
+ "soil_type": "Andosol",
+ "water_availability": "Alta",
+ "recommended_crops": [],
+ "used_fallback": true,
+ "notice": "No encontramos cultivos del dataset adecuados para esta altitud y disponibilidad de agua. Te sugerimos consultar a la Agencia Agraria de tu zona.",
+ "price_disclaimer": "Precios referenciales estimados (MIDAGRI-SIEA, promedio de la sierra). Las diferencias entre departamentos provienen de un factor de ajuste fijo y no son cotizaciones regionales verificadas. El ingreso bruto estimado no descuenta costos de producción ni es una ganancia garantizada.",
+ "sort_criteria": "Ingreso bruto estimado por hectárea (rendimiento × 1000 × precio por kg), de mayor a menor."
+}

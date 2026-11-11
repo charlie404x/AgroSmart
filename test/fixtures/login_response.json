@@ -1,0 +1,7 @@
+{
+ "access_token": "<reemplazado-en-la-prueba>",
+ "token_type": "bearer",
+ "expires_in": 1800,
+ "user_email": "ana@example.com",
+ "full_name": "Ana Quispe"
+}

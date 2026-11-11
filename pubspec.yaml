@@ -1,0 +1,63 @@
+name: agrosmart_peru
+description: "AgroSMART Perú — recomendación inteligente de cultivos para la sierra peruana."
+
+publish_to: 'none'
+
+version: 1.1.0+2
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Traducciones de Material/Cupertino (necesarias para usar locale es_PE).
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  # Almacenamiento cifrado del token de sesión (Keychain en iOS, Keystore en Android).
+  flutter_secure_storage: ^9.2.4
+  dio: ^5.7.0
+  go_router: ^14.6.1
+  flutter_svg: ^2.0.10+1
+
+# Las versiones >= 2.5 de path_provider_foundation (sólo iOS/macOS) compilan un
+# "native asset hook" que falla en Windows cuando la ruta del SDK de Flutter tiene
+# espacios (p. ej. "PRACTICA DE VISUL CODE"). Se fija 2.4.x, que no usa hooks.
+# Puede quitarse si el SDK se mueve a una ruta sin espacios (p. ej. C:\src\flutter).
+dependency_overrides:
+  path_provider_foundation: 2.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  # Herramienta de generación de la pantalla nativa de arranque (no se incluye en el APK).
+  # Ejecutar: dart run flutter_native_splash:create
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/branding/
+    - assets/icons/crops/
+    - assets/icons/modules/
+    - assets/crops/
+    - assets/illustrations/
+
+flutter_native_splash:
+  color: "#F3F7F1"
+  image: assets/branding/splash_logo.png
+  color_dark: "#0F1A12"
+  image_dark: assets/branding/splash_logo.png
+  android_12:
+    color: "#F3F7F1"
+    image: assets/branding/splash_logo.png
+    color_dark: "#0F1A12"
+    image_dark: assets/branding/splash_logo.png
+  web: false
